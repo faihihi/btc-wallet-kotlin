@@ -1,9 +1,6 @@
 # btc-wallet
 
-BTCWallet API is created to allow storing BTC transaction and fetching the transaction histories by a specific period of time.
-
-Cassandra DB is selected for its high availability and higher speed in write performance compared to MySQL.
-It is also horizontally scalable as Cassandra makes it easy to increase data it can maintain on demand by adding number of nodes.
+BTCWallet API is created to allow storing BTC transaction and fetching the wallet balances by the hour from a specific period of time.
 
 ## Development
 
@@ -19,7 +16,7 @@ To run the project locally:
 
 Run tests: `mvn clean test`
 
-## Save Record & Get Balances
+## Save Record & Get Wallet Balances
 
 Postman: https://www.getpostman.com/collections/1320449d046fbd59e119
 
@@ -34,7 +31,7 @@ Example request
 }
 ```
 
-### Get Balances
+### Get Wallet Balances
 
 endpoint: `/wallet/get`\
 Example request

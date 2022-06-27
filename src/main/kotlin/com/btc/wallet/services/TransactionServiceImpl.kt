@@ -21,6 +21,7 @@ class TransactionServiceImpl(val validators: RequestValidators, val metadataServ
                 amount = validRequest.amount,
                 created_at = DateTimeUtils.getCurrentDateTime()
             )
+            // TODO: L4 publish to messaging queue
             metadataService.saveSingleTransaction(btcTransaction).bind()
         }
 
